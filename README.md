@@ -7,4 +7,4 @@ For now, the data that goes with the code will only be provided upon request.  D
 
 Logistics:
 The model code (LFS_dist_models.R) depends on the data code (LFS_data_steps.R) to read the data and do some necessary formatting.
-The model code also depends on the GIS code (BayStudyGIS.R) for making summary maps.  The GIS code is only necessary for a couple of the plotting commands, though, so most of the model code will run without the GIS code.
+The model code also requires a shapefile of the regions for making summary maps.  
