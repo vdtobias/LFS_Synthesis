@@ -418,7 +418,11 @@ display.brewer.all(n=6, colorblindFriendly = TRUE)
 vis.gam(mwt1, view = c("month", "year"), cond = list(bay = 3), theta = 150, scale = "response")
 
 # Maps of predicted probabilities ####
-source(file = "BayStudyGIS.R")
+#load map data:
+sfbs.pg <- readOGR("C:/Users/vtobias/Desktop/MAST GIS/BayStudy/sfbs_pg.shp", layer = "sfbs_pg")
+#sfbs.pg = San Francisco Bay Study PolyGon
+# Source for building polygon: "BayStudyGIS.R"
+
 # spplot(sfbs.pg, mwt1.pred$fit[mwt1.pred$month == 6 & mwt1.pred$year == 2010])
 # spplot(sfbs.pg, c(0.021709860, 0.045809107, 0.036359178, 0.055434010, 0.001705079))
 # sfbs.pg$mwt1.2010.6 <- c(0.021709860, 0.045809107, 0.036359178, 0.055434010, 0.001705079)
